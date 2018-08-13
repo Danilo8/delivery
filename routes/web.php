@@ -10,7 +10,30 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-//
-Route::get('/', function () {
-    return view('welcome');
-});
+
+/**
+ * --------------------------------------------------------------------------
+ * Rotas Globais
+ * --------------------------------------------------------------------------
+ */
+Route::get('/', 'Controller@index');
+Route::get('/sobre', 'Controller@sobre');
+Route::get('/termos', 'Controller@termos');
+Route::get('/privacidade', 'Controller@privacidade');
+Route::get('/contato', 'Controller@contato');
+
+/**
+ * --------------------------------------------------------------------------
+ * Rotas para os Usuarios
+ * --------------------------------------------------------------------------
+ */
+Route::get('/entrar', 'UserController@login');
+
+/**
+ * --------------------------------------------------------------------------
+ * Rotas para os Restaurantes
+ * --------------------------------------------------------------------------
+ */
+Route::get('/restaurante/entrar', 'Controller@login');
+Route::get('/restaurante/cadastro', 'Controller@cadastro');
+Route::get('/restaurante/dashboard', 'Controller@dashboard');
