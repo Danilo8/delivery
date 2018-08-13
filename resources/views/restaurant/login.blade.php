@@ -25,8 +25,14 @@
 
         <!--CSS files-->
         <link rel="stylesheet" href="{{asset('css/style.css')}}">
+
+        <!--Fa Icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    <body>
+    <style>
+        body{background:url('{{asset('img/bg/bg-login-1.jpg')}}')no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}
+    </style>
+    <body style="font-family: 'Open Sans', sans-serif;">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="{{url('/')}}">
                 <img height="55" src="{{asset('img/logo/Logo_Search_Food_Branca.png')}}" alt="Logo">
@@ -66,7 +72,31 @@
             </div>
         </nav>
 
-        
+        <div style="float: right;height: 87.8vh;" class="col-5 bg-light">
+            <div class="p-5">
+                <h3 class="text-center">Assece o Painel Administrativo</h3>
+                <p class="mt-4">Ainda não tem uma conta? <a class="text-danger" href="{{url('/restaurante/cadastro')}}">Crie uma Aqui!</a></p>
+                <form class="mt-4" action="" method="post">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input class="form-control" type="email" name="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="senha">Senha:</label>
+                        <input class="form-control" type="email" name="senha" id="senha" placeholder="Senha">
+                    </div>
+                    <div class="form-group text-center">
+                        <a class="text-danger" href="#">
+                            <i class="fa fa-lock"></i>
+                            Recuperar minha Senha
+                        </a>
+                    </div>
+                    <button type="button" class="btn btn-block btn-lg btn-primary">
+                        Entrar
+                    </button>
+                </form>
+            </div>
+        </div>
 
         <!--JavaScrips files-->
         <script src="{{asset('js/popper.min.js')}}"></script>
