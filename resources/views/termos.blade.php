@@ -4,9 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="description" content="Search Food - Delivery">
+        <meta name="description" content="Termos de Uso">
         <meta name="author" content="Danilo Gonçalves dos Santos">
-        <title>Search Food - Delivery</title>
+        <title>Termos de Uso</title>
 
         <!--Icon-->
         <link rel="shortcut icon" href="{{asset('img/icon/SF.ico')}}" type="image/x-icon">
@@ -38,7 +38,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <div class="dropdown nav-item">
-                        <span style="cursor: pointer" class="nav-link">
+                        <span style="cursor: pointer" class="nav-link active text-white">
                              Sobre
                         </span>                        
                         <div class="dropdown-content text-center p-1">

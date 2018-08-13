@@ -34,6 +34,6 @@ Route::get('/entrar', 'UserController@login');
  * Rotas para os Restaurantes
  * --------------------------------------------------------------------------
  */
-Route::get('/restaurante/entrar', 'Controller@login');
-Route::get('/restaurante/cadastro', 'Controller@cadastro');
-Route::get('/restaurante/dashboard', 'Controller@dashboard');
+Route::get('/restaurante/login', 'RestaurantController@login');
+Route::get('/restaurante/cadastro', 'RestaurantController@cadastro');
+Route::get('/restaurante/dashboard', 'RestaurantController@dashboard');

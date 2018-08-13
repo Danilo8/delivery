@@ -48,7 +48,7 @@
                         </div>
                     </div>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{url('/contato')}}">Contato</a>
+                        <a class="nav-link active text-white" href="{{url('/contato')}}">Contato</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{url('/entrar')}}">Entrar/Cadastrar</a>

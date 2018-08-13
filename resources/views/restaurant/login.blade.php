@@ -54,11 +54,10 @@
                         <a class="nav-link" href="{{url('/entrar')}}">Entrar/Cadastrar</a>
                     </li>
                     <div id="donos-restaurante" class="dropdown nav-item">
-                        <span style="cursor: pointer" class="nav-link">
+                        <span style="cursor: pointer" class="nav-link active text-white">
                              Donos de Restaurante
                         </span>                        
                         <div class="dropdown-content text-center p-1">
-                            
                             <a class="dropdown-item" href="{{url('/restaurante/cadastro')}}">Cadastrar Restaurante</a>
                             <a class="dropdown-item" href="{{url('/restaurante/login')}}">Acessar Painel</a>
                         </div>
@@ -66,6 +65,8 @@
                 </ul>
             </div>
         </nav>
+
+        
 
         <!--JavaScrips files-->
         <script src="{{asset('js/popper.min.js')}}"></script>
